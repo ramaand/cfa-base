@@ -1,38 +1,108 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [BASE] Clean Frontend Architecture (CFA)
 
-## Getting Started
+### DESCRIPTION
 
-First, run the development server:
+This repository adapt Clean Architecture concept with use of `Next.js` and `Typescript`, this repo is created for base CFA and testing purpose.
+
+## Structure
+### core
+    1. data
+    Contains definition of repositories
+
+    2. dataStore
+    Contains definition of state like redux, zustand etc
+
+    3. domain
+    Contains definition of entities, presenters, usecases 
+
+    4. hooks
+    Contains definition of custom hooks
+
+    5. libs
+    Contains library, utilities etc
+
+    6. services
+    Contains backend services for UI components, handling business logic, data, and server-side communication
+
+    7. ui
+    Contains definition for ui components, server side components, styles etc
+
+        components
+        - contains all the reusable functional/presentational components
+        pages
+        
+        features
+        - contains feature specific components
+
+
+## Environment Variables
+
+
+
+## Technologies Used
+
+* `Typescript`
+* `Next.js 13`
+* `Jest`
+
+## Before Run
+- Make sure you have the .env variables
+- Make sure your node version is 18.17.0
+
+## Run Locally
+
+Install dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  npm install
+  # or
+  yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Start development
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm run dev
+  # or
+  yarn dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Running Tests
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run tests, run the following command
 
-## Learn More
+Running test with npm
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  npm run test
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Running test with yarn
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  yarn test
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To deploy this project run
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  npm run deploy
+```
+
+
+## Roadmap
+
+- [ ]  Main page
+
+## Notes
+To make sure the code remain same whoever the programmer is, please follow the rules:
+
+- Install all extension that are recommended.
+
+## Authors
+
+- Gilang Ramadhan [@ramaand](https://www.github.com/ramaand) [@portofolio](https://gilstuffs.xyz)
+

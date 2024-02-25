@@ -14,7 +14,17 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "types": ["@testing-library/jest-dom"],
     "paths": {
+      "@/data/*": ["./src/core/data/*"],
+      "@/dataStore/*": ["./src/core/dataStore/*"],
+      "@/entities/*": ["./src/core/domain/entities/*"],
+      "@/presenters/*": ["./src/core/domain/presenters/*"],
+      "@/useCases/*": ["./src/core/domain/useCases/*"],
+      "@/hooks/*": ["./src/core/hooks/*"],
+      "@/libs/*": ["./src/core/libs/*"],
+      "@/services/*": ["./src/core/services/*"],
+      "@/ui/*": ["./src/core/ui/*"],
       "@/*": ["./src/*"]
     }
   },

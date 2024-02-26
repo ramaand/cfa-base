@@ -6,33 +6,14 @@ This repository adapt Clean Architecture concept with use of `Next.js` and `Type
 
 ## Structure
 ### core
-    1. data
-    Contains definition of repositories
+    1. entities
+    Represent the fundamental business objects with their attributes and behavior.
 
-    2. dataStore
-    Contains definition of state like redux, zustand etc
+    2. services
+    Contains backend services for UI components, handling business logic, data, and server-side communication.
 
-    3. domain
-    Contains definition of entities, presenters, usecases 
-
-    4. hooks
-    Contains definition of custom hooks
-
-    5. libs
-    Contains library, utilities etc
-
-    6. services
-    Contains backend services for UI components, handling business logic, data, and server-side communication
-
-    7. ui
-    Contains definition for ui components, server side components, styles etc
-
-        components
-        - contains all the reusable functional/presentational components
-        pages
-        
-        features
-        - contains feature specific components
+    3. usecases
+    Contains interaction with entities to perform specific business actions or operations.
 
 
 ## Environment Variables

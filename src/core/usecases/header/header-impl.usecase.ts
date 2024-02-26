@@ -1,7 +1,7 @@
 import { map, Observable } from "rxjs";
 
-import { HeaderPresenter } from "@/presenters/header.presenter";
 import { UserService } from "@/services/user/user.service";
+import { HeaderPresenter } from "@/presenters/header.presenter";
 
 import { HeaderUsecase } from "./header.usecase";
 

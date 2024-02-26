@@ -1,4 +1,4 @@
-import { UserDomain } from "@/entities/user.domain";
+import { UserDomain } from "@/domain/user.domain";
 
 type THeaderPresenter = {
   title: string;

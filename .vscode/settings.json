@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["clsx", "formik", "grapari", "nextjs", "nextui", "tailwindcss"],
+  "cSpell.words": [
+    "clsx",
+    "formik",
+    "grapari",
+    "nextjs",
+    "nextui",
+    "tailwindcss"
+  ],
   // When to auto format imports/exports. Valid values are 'off' or 'onSave'.
   "tsImportSorter.configuration.autoFormat": "onSave",
   // Disable formatting for files matching regular expressions.
@@ -9,24 +16,27 @@
   // Grouping rules for path patterns for imports. {} is the fall-back group.
   // Wiki: https://github.com/daidodo/format-imports/wiki/Grouping-Rules
   "tsImportSorter.configuration.groupRules": [
-    ["^react(-dom)?$", { "regex": "^react", "sort": { "names": ["AZ", "az"] } }, { "regex": "^next/", "sort": { "names": ["AZ", "az"] } }],
-    [{ "regex": "^next", "sort": { "names": ["AZ", "az"] } }, { "regex": "^@$", "sort": { "names": ["AZ", "az"] } }, {}],
-
-    ["^[@]/types", "^[@]/core/types", "^[@]/locales"],
-    ["^[@]/styles", "^[@]/core/assets", "^[@]/assets", "^[@]/libs", "^[@]/hooks"],
     [
-      "^[@]/data",
-      "^[@]/dataStore",
-      "^[@]/core/domain",
-      "^[@]/entities",
-      "^[@]/presenters",
-      "^[@]/useCases",
-      "^[@]/services",
-      "^[@]/ui/components",
-      "^[@]/ui/features"
+      "^react(-dom)?$",
+      { "regex": "^react", "sort": { "names": ["AZ", "az"] } },
+      { "regex": "^next/", "sort": { "names": ["AZ", "az"] } },
+      { "regex": "^next-", "sort": { "names": ["AZ", "az"] } },
+      { "regex": "^next", "sort": { "names": ["AZ", "az"] } },
+      { "regex": "^@next", "sort": { "names": ["AZ", "az"] } }
     ],
-    "^[@]/pages",
+    [{}, { "regex": "^@$", "sort": { "names": ["AZ", "az"] } }],
 
+    [
+      "^[@]/types",
+      "^[@]/locales",
+      "^[@]/styles",
+      "^[@]/assets",
+      "^/public",
+      "^public",
+      "^/assets"
+    ],
+    ["^[@]/cores", "^[@]/entities", "^[@]/domain", "^[@]/services", "^[@]/usecases", "^[@]/presenters"],
+    ["^[@]/libs", "^[@]/utils", "^[@]/hooks", "^[@]/pages", "^[@]/components"],
     "^[.]"
   ],
   // Global Sorting rules. Valid values are 'none' or an object.

@@ -1,9 +1,9 @@
 import { AxiosResponse } from "axios";
 import { map, Observable } from "rxjs";
 
-import { HttpClient } from "@/libs/http/http-client";
+import { UserDomain } from "@/domain/user.domain";
 
-import { UserDomain } from "@/entities/user.domain";
+import { HttpClient } from "@/libs/http/http-client";
 
 import { UserService } from "./user.service";
 

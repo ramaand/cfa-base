@@ -35,7 +35,7 @@
       "^public",
       "^/assets"
     ],
-    ["^[@]/cores", "^[@]/entities", "^[@]/domain", "^[@]/services", "^[@]/usecases", "^[@]/presenters"],
+    ["^[@]/core", "^[@]/cores", "^[@]/entities", "^[@]/domain", "^[@]/services", "^[@]/usecases", "^[@]/presenters"],
     ["^[@]/libs", "^[@]/utils", "^[@]/hooks", "^[@]/pages", "^[@]/components"],
     "^[.]"
   ],

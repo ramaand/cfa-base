@@ -16,11 +16,7 @@
     "incremental": true,
     "types": ["@testing-library/jest-dom"],
     "paths": {
-      "@/domain/*": ["./src/core/entities/domain/*"],
-      "@/presenters/*": ["./src/core/entities/presenters/*"],
-      "@/entities/*": ["./src/core/entities/*"],
-      "@/usecases/*": ["./src/core/usecases/*"],
-      "@/services/*": ["./src/core/services/*"],
+      "@/core/*": ["./src/core/*"],
       "@/hooks/*": ["./src/hooks/*"],
       "@/libs/*": ["./src/libs/*"],
       "@/utils/*": ["./src/utils/*"],

@@ -1,7 +1,7 @@
 import { BehaviorSubject, Observable } from "rxjs";
 
+import { UserDomain } from "@/core/entities/domains/user.domain";
 import { HttpClient } from "@/core/libs/http/http-client";
-import { UserDomain } from "@/domain/user.domain";
 
 import { UserService } from "./user.service";
 

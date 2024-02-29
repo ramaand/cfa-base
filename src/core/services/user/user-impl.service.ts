@@ -9,7 +9,7 @@ import { UserService } from "./user.service";
 const axiosMapper = (res: unknown) => (res as AxiosResponse).data;
 
 export class UserServiceImpl extends UserService {
-  constructor(url: URL, http: HttpClient) {
+  constructor(url: string, http: HttpClient) {
     super(url, http);
   }
 

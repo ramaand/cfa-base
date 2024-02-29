@@ -4,7 +4,7 @@ import { UserDomain } from "@/core/entities/domains/user.domain";
 import { HttpClient } from "@/core/libs/http/http-client";
 
 interface IUserService {
-  url: URL;
+  url: string;
   http: HttpClient;
 
   get(): Observable<UserDomain[]>;
@@ -15,10 +15,10 @@ interface IUserService {
 }
 
 export abstract class UserService implements IUserService {
-  readonly url: URL;
+  readonly url: string;
   readonly http: HttpClient;
 
-  constructor(url: URL, http: HttpClient) {
+  constructor(url: string, http: HttpClient) {
     this.url = url;
     this.http = http;
   }

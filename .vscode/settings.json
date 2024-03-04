@@ -35,8 +35,9 @@
       "^public",
       "^/assets"
     ],
-    ["^[@]/core", "^[@]/cores", "^[@]/entities", "^[@]/domain", "^[@]/services", "^[@]/usecases", "^[@]/presenters"],
+    ["^[@]/cores", "^[@]/entities", "^[@]/services", "^[@]/usecases"],
     ["^[@]/libs", "^[@]/utils", "^[@]/hooks", "^[@]/pages", "^[@]/components"],
+
     "^[.]"
   ],
   // Global Sorting rules. Valid values are 'none' or an object.

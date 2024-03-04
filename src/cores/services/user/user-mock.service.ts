@@ -1,13 +1,12 @@
 import { BehaviorSubject, Observable } from "rxjs";
 
-import { HttpClient } from "@/libs/http/http-client";
-
-import { UserDomain } from "@/entities/user.domain";
+import { UserDomain } from "@/core/entities/domains/user.domain";
+import { HttpClient } from "@/core/libs/http/http-client";
 
 import { UserService } from "./user.service";
 
 export class UserServiceMock extends UserService {
-  constructor(url: URL, http: HttpClient) {
+  constructor(url: string, http: HttpClient) {
     super(url, http);
   }
 

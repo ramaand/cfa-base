@@ -1,4 +1,4 @@
-import { userServiceImpl, userServiceMock } from "@/core/services/user";
+import { userServiceImpl, userServiceMock } from "@/cores/services/user";
 
 import { HeaderUsecaseImpl } from "./header.impl.usecase";
 import { HeaderUsecaseMock } from "./header.mock.usecase";

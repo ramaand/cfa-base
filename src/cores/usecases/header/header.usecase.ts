@@ -1,7 +1,7 @@
 import { Observable } from "rxjs";
 
-import { HeaderPresenter } from "@/core/entities/presenters/header.presenter";
-import { UserService } from "@/core/services/user/user.service";
+import { HeaderPresenter } from "@/cores/entities/presenters/header.presenter";
+import { UserService } from "@/cores/services/user/user.service";
 
 interface HeaderUsecaseI {
   userService: UserService;

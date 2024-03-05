@@ -1,8 +1,8 @@
 import { BehaviorSubject, Observable } from "rxjs";
 
-import { UserDomain } from "@/core/entities/domains/user.domain";
-import { HeaderPresenter } from "@/core/entities/presenters/header.presenter";
-import { UserService } from "@/core/services/user/user.service";
+import { UserDomain } from "@/cores/entities/domains/user.domain";
+import { HeaderPresenter } from "@/cores/entities/presenters/header.presenter";
+import { UserService } from "@/cores/services/user/user.service";
 
 import { HeaderUsecase } from "./header.usecase";
 

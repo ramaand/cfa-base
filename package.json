@@ -15,6 +15,7 @@
     "node": "18.17.0"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.10",
     "@types/node": "20.11.20",
     "@types/react": "18.2.57",
     "@types/react-dom": "18.2.19",
@@ -25,11 +26,14 @@
     "cz-salt": "^1.0.0",
     "eslint": "8.56.0",
     "eslint-config-next": "13.4.10",
+    "framer-motion": "^11.0.8",
     "next": "13.4.10",
+    "next-themes": "^0.2.1",
     "postcss": "8.4.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rxjs": "^7.8.1",
+    "tailwind-merge": "^2.2.1",
     "tailwindcss": "3.4.1",
     "typescript": "5.3.3"
   },

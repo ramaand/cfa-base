@@ -1,4 +1,4 @@
-import { httpClientImpl, httpClientMock } from "@/core/libs/http";
+import { httpClientImpl, httpClientMock } from "@/cores/libs/http";
 
 import { UserServiceImpl } from "./user.impl.service";
 import { UserServiceMock } from "./user.mock.service";

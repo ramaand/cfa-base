@@ -1,10 +1,10 @@
-import { AxiosResponse } from "axios";
-import { map, Observable } from "rxjs";
+import { AxiosResponse } from 'axios';
+import { map, Observable } from 'rxjs';
 
-import { UserDomain } from "@/cores/entities/domains/user.domain";
-import { HttpClient } from "@/cores/libs/http/http-client";
+import { UserDomain } from '@/cores/entities/domains/user.domain';
+import { HttpClient } from '@/cores/libs/http/http-client';
 
-import { UserService } from "./user.service";
+import { UserService } from './user.service';
 
 const axiosMapper = (res: unknown) => (res as AxiosResponse).data;
 
@@ -17,7 +17,7 @@ export class UserServiceImpl extends UserService {
     return this.http
       .request({
         url: this.url,
-        method: "GET",
+        method: 'GET',
       })
       .pipe(map(axiosMapper));
   }
@@ -26,7 +26,7 @@ export class UserServiceImpl extends UserService {
     return this.http
       .requestWithAuth({
         url: `${this.url}/${id}`,
-        method: "GET",
+        method: 'GET',
       })
       .pipe(map(axiosMapper));
   }
@@ -35,7 +35,7 @@ export class UserServiceImpl extends UserService {
     return this.http
       .requestWithAuth({
         url: this.url,
-        method: "POST",
+        method: 'POST',
         data: user,
       })
       .pipe(map(axiosMapper));
@@ -45,7 +45,7 @@ export class UserServiceImpl extends UserService {
     return this.http
       .requestWithAuth({
         url: `${this.url}/${user.id}`,
-        method: "PUT",
+        method: 'PUT',
         data: user,
       })
       .pipe(map(axiosMapper));
@@ -55,9 +55,8 @@ export class UserServiceImpl extends UserService {
     return this.http
       .requestWithAuth({
         url: `${this.url}/${id}`,
-        method: "DELETE",
+        method: 'DELETE',
       })
       .pipe(map(axiosMapper));
   }
 }
-

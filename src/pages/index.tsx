@@ -1,9 +1,20 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import React from 'react';
 
-const inter = Inter({ subsets: ['latin'] })
+import { Inter } from 'next/font/google';
+import Image from 'next/image';
+
+import { Observable } from 'rxjs';
+
+import { useObservable } from '@/hooks/useObservable';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  const { data, error, loading, refetch } = useObservable({
+    source: new Observable(),
+    initialState: {},
+    depedencies: [],
+  });
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
@@ -114,5 +125,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }

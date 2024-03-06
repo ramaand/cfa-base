@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Observable, Subscription, tap } from "rxjs";
+import { Observable, Subscription, tap } from 'rxjs';
 
-import { useSubscription } from "./useSubscription";
+import { useSubscription } from './useSubscription';
 
 type TObservableResponse<T> = {
   data: T | null;

@@ -1,13 +1,14 @@
-import { PropsWithChildren } from "react";
-import { ThemeProvider } from "next-themes";
-import { NextUIProvider } from "@nextui-org/react";
+import { PropsWithChildren } from 'react';
 
-export const AppProviders = ({ children }: PropsWithChildren) => {
+import { NextUIProvider } from '@nextui-org/react';
+import { ThemeProvider as NextThemeProvider } from 'next-themes';
+
+export const AppProviders: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <NextUIProvider>
-      <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+      <NextThemeProvider attribute="class" forcedTheme="light">
         {children}
-      </ThemeProvider>
+      </NextThemeProvider>
     </NextUIProvider>
   );
 };

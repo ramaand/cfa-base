@@ -1,9 +1,7 @@
-const Home = () => {
-  return (
-    <div className="dark:bg-gray-800 dark:text-white bg-white text-black">
-      <div>Text color changes based on theme</div>
-    </div>
-  );
+import { ReactElement } from 'react';
+
+const HomePage = () => {
+  return <h1>Welcome to the Dashboard!</h1>;
 };
 
-export default Home;
+export default HomePage;

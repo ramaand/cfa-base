@@ -1,4 +1,15 @@
 .yarn
 .next
+.vscode
+.env
+.eslintrc.json
+.prettierrc
+
 dist
 node_modules
+coverage
+docs
+
+package.json
+package-lock.json
+README.md

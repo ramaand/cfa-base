@@ -24,6 +24,7 @@ npm run dev
 ## Build
 
 Build the project for production.
+
 ```bash
 npm run build
 ```
@@ -43,6 +44,7 @@ Lint the TypeScript react files using ESLint
 ```bash
 npm run lint
 ```
+
 ## Format
 
 Format files using Prettier.
@@ -50,7 +52,6 @@ Format files using Prettier.
 ```bash
 npm run format
 ```
-
 
 ## Test
 
@@ -65,7 +66,7 @@ npm run test
 Run tests in watch mode using Jest.
 
 ```bash
-npm run 
+npm run
 ```
 
 ## Commit
@@ -73,5 +74,5 @@ npm run
 Run Commitizen to create a commit message.
 
 ```bash
-npm run 
+npm run
 ```

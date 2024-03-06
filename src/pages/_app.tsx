@@ -1,12 +1,12 @@
-import "@/styles/globals.css";
+import type { AppProps } from 'next/app';
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
 
-import type { AppProps } from "next/app";
-import { Inter } from "next/font/google";
-import Head from "next/head";
+import { AppProviders } from '@/providers/AppProviders';
 
-import { AppProviders } from "@/providers/AppProviders";
+import { cn } from '@/utils/classname';
 
-import { cn } from "@/utils/classname";
+import '@/styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -12,11 +12,12 @@ This repository adopt Clean Architecture concept with use of `Next.js` and `Type
 
 ## Docs
 
-  - [Technologies Used](#technologies-used)
-  - [Architecture](./docs/ARCHITECTURE.md "Project Architecture Documentation")
-  - [Project Scripts](./docs/SCRIPTS.md "Project Scripts Documentation")
+- [Technologies Used](#technologies-used)
+- [Architecture](./docs/ARCHITECTURE.md 'Project Architecture Documentation')
+- [Project Scripts](./docs/SCRIPTS.md 'Project Scripts Documentation')
 
 ## Technologies Used
+
 - Cores
   - [TypeScript](http://www.typescriptlang.org/)
   - [Rxjs](https://rxjs.dev/)
@@ -37,4 +38,3 @@ This repository adopt Clean Architecture concept with use of `Next.js` and `Type
 ## Authors
 
 - Gilang Ramadhan [@ramaand](https://www.github.com/ramaand) [@portofolio](https://gilstuffs.xyz)
-

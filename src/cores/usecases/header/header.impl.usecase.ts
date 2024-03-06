@@ -1,9 +1,9 @@
-import { map, Observable } from "rxjs";
+import { map, Observable } from 'rxjs';
 
-import { HeaderPresenter } from "@/cores/entities/presenters/header.presenter";
-import { UserService } from "@/cores/services/user/user.service";
+import { HeaderPresenter } from '@/cores/entities/presenters/header.presenter';
+import { UserService } from '@/cores/services/user/user.service';
 
-import { HeaderUsecase } from "./header.usecase";
+import { HeaderUsecase } from './header.usecase';
 
 export class HeaderUsecaseImpl extends HeaderUsecase {
   constructor(userService: UserService) {
@@ -14,8 +14,8 @@ export class HeaderUsecaseImpl extends HeaderUsecase {
       map(
         (user) =>
           new HeaderPresenter({
-            title: "Header Title",
-            description: "Header Description",
+            title: 'Header Title',
+            description: 'Header Description',
             user: user,
           })
       )

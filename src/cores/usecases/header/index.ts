@@ -1,9 +1,13 @@
-import { userServiceImpl, userServiceMock } from "@/cores/services/user";
+import { userServiceImpl, userServiceMock } from '@/cores/services/user';
 
-import { HeaderUsecaseImpl } from "./header.impl.usecase";
-import { HeaderUsecaseMock } from "./header.mock.usecase";
-import { HeaderUsecase } from "./header.usecase";
+import { HeaderUsecaseImpl } from './header.impl.usecase';
+import { HeaderUsecaseMock } from './header.mock.usecase';
+import { HeaderUsecase } from './header.usecase';
 
-export const headerUsecaseMock: HeaderUsecase = new HeaderUsecaseMock(userServiceMock);
+export const headerUsecaseMock: HeaderUsecase = new HeaderUsecaseMock(
+  userServiceMock
+);
 
-export const headerUsecaseImpl: HeaderUsecase = new HeaderUsecaseImpl(userServiceImpl);
+export const headerUsecaseImpl: HeaderUsecase = new HeaderUsecaseImpl(
+  userServiceImpl
+);

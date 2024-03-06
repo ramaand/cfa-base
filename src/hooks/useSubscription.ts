@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 
-import { Observable, tap } from "rxjs";
+import { Observable, tap } from 'rxjs';
 
 export const useSubscription = <T>(
   source: Observable<T>,

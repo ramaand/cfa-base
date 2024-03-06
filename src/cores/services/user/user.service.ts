@@ -1,7 +1,7 @@
-import { Observable } from "rxjs";
+import { Observable } from 'rxjs';
 
-import { UserDomain } from "@/cores/entities/domains/user.domain";
-import { HttpClient } from "@/cores/libs/http/http-client";
+import { UserDomain } from '@/cores/entities/domains/user.domain';
+import { HttpClient } from '@/cores/libs/http/http-client';
 
 interface IUserService {
   url: string;

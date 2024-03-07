@@ -1,7 +1,11 @@
+import { ReactElement, ReactNode } from 'react';
+
+import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { Inter, Poppins } from 'next/font/google';
 
 import { ThemeProvider } from '@/providers/ThemeProvider';
+import { SessionProvider } from 'next-auth/react';
 
 import { cn } from '@/libs/utils';
 
@@ -18,18 +22,35 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+  getLayout?: (page: ReactElement) => ReactNode;
+};
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
+
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}: AppPropsWithLayout) {
+  const getLayout = Component.getLayout ?? ((page) => page);
+
   return (
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-      <main
-        className={cn(
-          'min-h-screen bg-background antialiased font-sans',
-          inter.variable,
-          poppins.variable
+      <SessionProvider session={session}>
+        {getLayout(
+          <main
+            className={cn(
+              'min-h-screen bg-background antialiased font-sans',
+              inter.variable,
+              poppins.variable
+            )}
+          >
+            <Component {...pageProps} />
+          </main>
         )}
-      >
-        <Component {...pageProps} />
-      </main>
+      </SessionProvider>
     </ThemeProvider>
   );
 }

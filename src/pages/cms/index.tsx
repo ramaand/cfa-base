@@ -6,13 +6,13 @@ import { useObservable } from '@/hooks/useObservable';
 
 import { withDashboardLayout } from '@/components/layouts/dashboard';
 
-const HomePage = () => {
+const CmsPage = () => {
   const { data, error, loading, refetch } = useObservable({
     source: new Observable(),
     initialState: {},
     depedencies: [],
   });
-  return <div>Home Page</div>;
+  return <div>Dashboard</div>;
 };
 
-export default withDashboardLayout(HomePage);
+export default withDashboardLayout(CmsPage);

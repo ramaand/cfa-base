@@ -6,8 +6,9 @@ import { MenuIcon } from 'lucide-react';
 
 import { navItems } from '@/mocks/nav';
 
-import { DashboardNav } from '@/components/layouts/dashboard-nav';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+
+import { DashboardNav } from '../dashboard-nav';
 
 type TSidebar = React.ComponentProps<'div'>;
 
@@ -26,7 +27,7 @@ export function MobileSidebar({ className }: TSidebar) {
                 Overview
               </h2>
               <div className="space-y-1">
-                <DashboardNav items={navItems} setOpen={setOpen} />
+                <DashboardNav items={navItems} />
               </div>
             </div>
           </div>

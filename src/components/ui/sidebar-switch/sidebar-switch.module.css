@@ -1,0 +1,35 @@
+.toggleContainer {
+  @apply relative w-8 h-6 cursor-pointer flex flex-col items-center justify-center gap-2 transition-all duration-300 transform;
+}
+
+.checkbox {
+  @apply hidden;
+}
+
+.toggle {
+  @apply relative w-full h-full cursor-pointer flex flex-col items-center justify-center gap-1 duration-500;
+}
+
+.bars {
+  @apply w-full h-1 bg-slate-500 rounded-md;
+}
+
+.toggle.checked .bars {
+  @apply absolute duration-500;
+}
+
+.toggle.checked .bar2 {
+  @apply transform scale-x-0 duration-500;
+}
+
+.toggle.checked .bar1 {
+  @apply transform rotate-45 duration-500;
+}
+
+.toggle.checked .bar3 {
+  @apply transform -rotate-45 duration-500;
+}
+
+.toggle.checked {
+  @apply transform rotate-180 duration-500;
+}

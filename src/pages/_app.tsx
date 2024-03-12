@@ -40,7 +40,7 @@ export default function App({
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
       <SessionProvider session={session}>
         {getLayout(
-          <main
+          <div
             className={cn(
               'min-h-screen bg-background antialiased font-sans',
               inter.variable,
@@ -48,7 +48,7 @@ export default function App({
             )}
           >
             <Component {...pageProps} />
-          </main>
+          </div>
         )}
       </SessionProvider>
     </ThemeProvider>
